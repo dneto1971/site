@@ -16,7 +16,7 @@
                 <li> <a href="#sobre">Sobre mim</a></li>
                 <li><a href="#projeto">Projetos</a></li>
                 <li><a href="#contato">Contatos</a></li>
-                
+
             </ul>
         </nav>
     </header>
@@ -24,13 +24,13 @@
     <section id="sobre">
         <h2>Sobre mim</h2>
 
-        <img src="img/1650827666230.jpeg"
-            alt="imagem do perfil de Domingos Neto." title="Imagem perfil de Domingos Neto">
+        <img src="img/1650827666230.jpeg" alt="imagem do perfil de Domingos Neto."
+            title="Imagem perfil de Domingos Neto">
         <br>
-        
+
         <article>
             <p>
-                Olá, eu sou o Domingos Neto, sou autodidata e gosto de tecnologias. adicionado mais um site.
+                Olá, eu sou o Domingos Neto, sou autodidata e gosto de tecnologias.
             </p>
         </article>
 
@@ -59,7 +59,43 @@
             </p>
 
         </article>
+    </section><br>
 
+    <section id="habilidades">
+
+        <h2>Habilidades e Tecnologias</h2><br>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Tecnologia</th>
+                    <th>Nível</th>
+                    <th>Descriçao</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th>HTML</th>
+                    <th>Iniciante</th>
+                    <th>capaz de construir paginas web semanticas responsivas</th>
+                </tr>
+
+                <tr>
+                    <th>CSS</th>
+                    <th>Intermediário</th>
+                    <th>experiencia com flexbox, grid, animaçoes e CSS </th>
+                </tr>
+
+                <tr>
+                    <th>JavaScript</th>
+                    <th>Básico</th>
+                    <th>Desenvolvimento de script do lado do cliente para interaçoes</th>
+                </tr>
+            </tbody>
+
+        </table>
+        
     </section>
 
     <footer>
@@ -71,11 +107,40 @@
 
             <p>Tem um projeto em mente? Entre em contato</p>
 
-            <address>
+            <!-- <address>
                 E-mail: <a href="mailto:dneto1971@gmaill.com">dneto1971@gmail.com</a>
                 <br>
                 Telefone: <a href="tel:+5548999999999">(48)99999-9999</a>
-            </address>
+            </address> -->
+            <form action="">
+
+                <label for="nome">Nome: </label>
+                <input type="text" id="nome" name="nome" required><br>
+
+                <label for="email">E-mail: </label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="telefone">Telefone: </label>
+                <input type="tel" id="telefone" name="telefone"><br>
+
+                <label for="assunto">Assunto: </label>
+                <select id="assunto" name="assunto">
+                    <option value="orcamento">Orçamento</option>
+                    <option value="duvida">Dúvidas</option>
+                    <option value="outro">Outros</option>
+                </select><br>
+
+                <textarea name="mensagem" id="mensagem" rows="10" cols="30" required></textarea><br>
+
+                <input type="checkbox" name="inscricao" id="inscricao">
+                <label for="inscricao">Gostaria de receber nossa newsletter</label>
+                <br>
+
+                <input type="submit" value="Enviar mensagem"><br>
+
+
+
+            </form>
         </section>
     </footer>
 </body>
