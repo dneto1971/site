@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novo Fomulario</title>
+</head>
+
+<body>
+    <header>
+        <h1>Formulário de Vagas</h1>
+
+        <nav> <!-- Seçao de navegaçao do site. -->
+            <ul> <!-- Lista nao ordenada para links do nosso menu -->
+                <li> <a href="#identificacao">Identificaçao</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#escolaridade">Escolaridade</a></li>
+                <li> <a href="#sobre">Sobre mim</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <form action="">
+        <section id="identificacao">
+        
+            <label for="nome">Nome Completo: </label>
+            <input type="text" id="nome" name="nome" required><br>
+
+            <label for="email">E-mail: </label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="idade">Idade: </label>
+            <input type="idade" id="idade" name="idade" required><br>
+        
+        </section>
+
+        <section id="habilidades">
+            <p> - Selecione para qual matéria voce está se candidatando para lecionar: </p>
+            <input type="radio" name="materia" value="matematica" required>
+            <label for="matematica">Matemática</label><br>
+            <input type="radio" name="materia" value="portugues">
+            <label for="portugues">Português</label><br>
+            <input type="radio" name="materia" value="biologia">
+            <label for="biologia">Biologia</label><br>
+            <input type="radio" name="materia" value="ciencias">
+            <label for="ciencias">Ciências</label><br>
+            <input type="radio" name="materia" value="historia">
+            <label for="historia">História</label><br>
+            <input type="radio" name="materia" value="geografia">
+            <label for="geografia">Geografia</label><br>
+            <input type="radio" name="materia" value="artes">
+            <label for="artes">Artes</label><br>
+        </section>
+
+        <section id="escolaridade">
+            <p> - Selecione o nível de Escolaridade: </p>
+            <input type="radio" name="escolaridade" value="superior" required>
+            <label for="superior">Ensino Superior Completo</label><br>
+            <input type="radio" name="escolaridade" value="mestrado">
+            <label for="mestrado">Cursando Mestrado</label><br>
+            <input type="radio" name="escolaridade" value="mestrado">
+            <label for="mestrado">Mestrado Completo</label><br>
+            <input type="radio" name="escolaridade" value="doutorado">
+            <label for="doutorado">Cursando Doutorado</label><br>
+            <input type="radio" name="escolaridade" value="doutorado">
+            <label for="doutorado">Doutorado Completo</label><br>
+        </section>
+
+        <section id="sobre">
+            <p> - Descreva um pouco sobre voce: </p>
+            <textarea name="mensagem" id="mensagem" rows="10" cols="30" required></textarea><br>
+
+            <input type="submit" value="Enviar formulário"><br>
+        </section>  
+    </form>  
+    
+</body>
+
+</html>
